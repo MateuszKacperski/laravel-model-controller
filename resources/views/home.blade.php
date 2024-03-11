@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('main-content')
+    <main>
       <div class="container my-4">
         <div class="row">
             @foreach ($movies as $movie)
@@ -18,6 +19,7 @@
             @endforeach
         </div>
       </div>
-      @endsection
+    </main>
+@endsection
 
 
