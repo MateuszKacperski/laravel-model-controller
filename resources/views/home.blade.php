@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Movies</title>
-    @vite('resources/js/app.js')
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Movie</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">About</a>
-            </li>
-          </ul>
-      </nav>
+@extends('layouts.main')
+
+@section('main-content')
       <div class="container my-4">
         <div class="row">
             @foreach ($movies as $movie)
@@ -35,11 +18,6 @@
             @endforeach
         </div>
       </div>
-      <footer>
-            <div class="copyright text-center bg-info p-5">
-                <p>@  Movies Boolean S.p.a.</p>
-            </div>
-    </footer>         
-</body>
-</html>
+      @endsection
+
 
